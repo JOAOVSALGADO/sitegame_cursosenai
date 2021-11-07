@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.links{background-color: rgba(17, 16, 16, 0.377);
+.links{background-color: rgba(17, 16, 16, 0.705);
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -53,7 +53,8 @@ border-radius: 30px;}
 }
 
 .links label:hover{
-    background-color: rgba(255, 255, 255, 0.39);
+    background-color: rgba(224, 15, 15, 0.808);
+    padding: 23px 30px;
 }
 .bloco{
     width: 100vw;
@@ -88,6 +89,7 @@ h1    {
     
 }
 .pagina2{
+    padding: 20px;
     color: black;
     text-align: center;
     font-size: 60px;
@@ -110,26 +112,32 @@ h1    {
 transform: skew(-5deg);
 
 }
-.img2:hover{
-    transform:scale(1.1);
-}
+
 
 .anunciosextra{margin-left: 80px;
     justify-content: center;
     align-items: center;
+    margin-top: -100px;
 }
 .menuinferior {
     
-    
+    padding: 50px;
     text-align: center;
     
     
 }
-.menu2{ padding: 50px;
+.menu2{ padding: 30px;
     color: rgb(149, 44, 22);
     text-align: center;
 }
-
+.menu2:hover{
+    color: white;
+    background-color: red;
+    width: auto;
+    padding:7px 30px;
+    border-radius: 10px;
+    transition: all .7s;
+}
 
 @keyframes h1 {from{
     opacity: 0;
@@ -200,9 +208,17 @@ p {
     display: inline-flex; 
     
 }
+.botaovermais{
+   text-align: center;
+   margin-top: 150px;
+}
+.botaosaibamais2:hover{
+    background-color: black;
+    transform:scale(1.1)
+}
 .botaosaibamais2{
     background-color: rgba(189, 9, 144, 0.746);
-    margin-left: 800px;
+    align-items: center;
     text-decoration: none;
     width: 250px;
     height: 25px;
@@ -213,7 +229,7 @@ p {
     text-align: center;
     justify-content: center;
     display: inline-flex; 
-    margin-top: 80px;
+    
     
 }
 .botaosaibamais:hover{
