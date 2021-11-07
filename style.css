@@ -118,6 +118,17 @@ transform: skew(-5deg);
     justify-content: center;
     align-items: center;
 }
+.menuinferior {
+    
+    
+    text-align: center;
+    
+    
+}
+.menu2{ padding: 50px;
+    color: rgb(149, 44, 22);
+    text-align: center;
+}
 
 
 @keyframes h1 {from{
