@@ -15,3 +15,9 @@ window.addEventListener('scroll', function(){
 
 animeScroll();
 })
+**/
+
+
+$('input').on('change', function() {
+  $('body').toggleClass('blue');
+});
