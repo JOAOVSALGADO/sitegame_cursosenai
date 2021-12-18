@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="cadastro-create.component.css">
+
+</body>
+</html>
+    
+
+<section class="new-user" id="new-user">
+    <div class="container">
+        <div class="title-new-user">
+            <div class="row">
+                <div class="col-12">
+                    <img src="logo.png" alt="">
+                    <h2>Cadastre-se</h2>
+                </div>
+                <div class="col-md-6" style="margin: 0 auto;">
+                    <div class="row-effect">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="col-md-6" style="margin: 0 auto;">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <mat-form-field>
+                                <label>USUARIO</label>
+                                <input type="text" class="form-control" matInput [(ngModel)]="cadastro.usuario" name="usuario">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                            <mat-form-field>
+                                <label>SENHA</label>
+                                <input type="password" class="form-control" matInput [(ngModel)]="cadastro.senha" name="senha">
+                            </mat-form-field>
+                    </div>
+                    <!--
+                    <div class="form-group">
+                        <mat-form-field>
+                            <label>CPF</label>
+                            <input type="text" class="form-control" name="cpf">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field>
+                            <label>Nome e Sobrenome</label>
+                            <input type="text" class="form-control" name="nome">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field>
+                            <label>Data de Nascimento</label>
+                            <input type="date" class="form-control" name="dataNasc">
+                        </mat-form-field>
+                    </div>
+                    <div class="form-group">
+                        <mat-form-field>
+                            <label>Telefone</label>
+                            <input type="email" class="form-control" name="telefone">
+                        </mat-form-field>
+                    </div>  
+                -->   
+                    <div class="row">
+                        <div class="col-12 col-md-12 d-flex justify-content-center" style="margin: 0 auto;">
+                            <hr class="mb-4">
+                            <div class="col-12 col-md-4 p-0">
+                                <button class="btn btn-cadastrar" (click)="createCadastro()" color="warn">Cadastrar</button>
+                            </div>
+                            <div class="col-12 col-md-3 p-0">
+                                <button class="btn btn-cadastrar"  (click)="cancelarCadastro()" color="accent">Cancelar</button>
+                            </div>
+                            <div class="col-12 col-md-5 p-0">
+                                <button class="btn btn-cadastrar"  (click)="tabelasCadastro()" color="accent">Todos os cadastros</button>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<app-footer></app-footer>
